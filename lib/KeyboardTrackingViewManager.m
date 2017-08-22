@@ -306,7 +306,7 @@ typedef NS_ENUM(NSUInteger, KeyboardTrackingScrollBehavior) {
 
 - (void)_updateScrollViewInsets
 {
-    if(self.scrollViewToManage != nil)
+    if(false && self.scrollViewToManage != nil)
     {
         UIEdgeInsets insets = self.scrollViewToManage.contentInset;
         CGFloat bottomInset = MAX(self.bounds.size.height, [ObservingInputAccessoryView sharedInstance].keyboardHeight + [ObservingInputAccessoryView sharedInstance].height);
